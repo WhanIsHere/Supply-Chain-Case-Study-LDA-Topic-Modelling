@@ -96,7 +96,8 @@ with tab1:
     st.header("Unique Dictionary")
     st.write(f"Number of unique dictionary: {len(dictionary_after)}")
     with st.expander("Expand to see all unique dictionary"):
-            st.write(token2id_after)
+            # Display the content in Streamlit (for example, as a list)
+            st.write(list(dictionary_after))
 
 
 
