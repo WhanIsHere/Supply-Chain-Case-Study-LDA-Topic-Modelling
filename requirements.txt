@@ -3,4 +3,4 @@ wordcloud
 matplotlib
 pandas
 numpy
-gensim
+pickle5
