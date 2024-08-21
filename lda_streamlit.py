@@ -5,6 +5,7 @@ import pandas as pd
 import numpy as np
 import pickle
 import streamlit.components.v1 as components
+from gensim.corpora import Dictionary
 
 # Set page configuration
 st.set_page_config(
