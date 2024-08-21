@@ -3,4 +3,3 @@ wordcloud
 matplotlib
 pandas
 numpy
-pickle
