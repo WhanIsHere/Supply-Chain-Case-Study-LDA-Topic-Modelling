@@ -3,3 +3,4 @@ wordcloud
 matplotlib
 pandas
 numpy
+gensim
