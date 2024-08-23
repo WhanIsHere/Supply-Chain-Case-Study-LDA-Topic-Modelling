@@ -21,7 +21,7 @@ lda_results_file = "Streamlit Files/lda_topics.csv"
 articles_significant_topics = "Streamlit Files/articles_significant_topics.csv"
 lda_params_file = "Streamlit Files/lda_params.csv"
 articles_file = "Streamlit Files/cleaned_article.pkl"  
-dictionary_file = "Streamlit Files/dictionary_after.pkl"
+dictionary_file = "Streamlit Files/dictionary words.pkl"
 html_path = "Streamlit Files/lda.html"
 word_cloud_path = "Streamlit Files/WordCloud_Topic.png"
 topic_evolution_image_path = "Streamlit Files/Topic_Evolution.png"  
@@ -32,7 +32,7 @@ articles_df = pd.read_pickle(articles_file)
 results_df = pd.read_csv(articles_significant_topics)  
 lda_params_df = pd.read_csv(lda_params_file)
 with open(dictionary_file, "rb") as file:
-    dictionary_after = pickle.load(file)
+    dictionary_words = pickle.load(file)
     
 
 # Title and Description
@@ -93,9 +93,9 @@ with tab1:
     
     # Display unique dictionary words
     st.header("Unique Dictionary")
-    st.write(f"Number of unique dictionary: {len(dictionary_after)}")
+    st.write(f"Number of unique dictionary: {len(dictionary_words)}")
     with st.expander("Expand to see all unique dictionary"):
-            st.write(dictionary_after)
+            st.write(dictionary_words)
 
 
 
