@@ -17,14 +17,14 @@ st.set_page_config(
 
 
 # Filepaths
-lda_results_file = 'data/lda_topics.csv'
-articles_significant_topics = 'data/articles_significant_topics.csv'
-lda_params_file = 'data/lda_params.csv'
-articles_file = 'data/cleaned_article.pkl'  
-dictionary_file = 'data/dictionary_after.pkl'
-html_path = 'data/lda.html'
-word_cloud_path = 'data/WordCloud_Topic.png'
-topic_evolution_image_path = 'data/Topic_Evolution.png'  
+lda_results_file = 'Streamlit Files/lda_topics.csv'
+articles_significant_topics = 'Streamlit Files/articles_significant_topics.csv'
+lda_params_file = 'Streamlit Files/lda_params.csv'
+articles_file = 'Streamlit Files/cleaned_article.pkl'  
+dictionary_file = 'Streamlit Files/dictionary_after.pkl'
+html_path = 'Streamlit Files/lda.html'
+word_cloud_path = 'Streamlit Files/WordCloud_Topic.png'
+topic_evolution_image_path = 'Streamlit Files/Topic_Evolution.png'  
 
 # Load data
 lda_df = pd.read_csv(lda_results_file)
