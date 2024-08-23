@@ -6,6 +6,7 @@ import numpy as np
 import pickle
 import streamlit.components.v1 as components
 
+
 # Set page configuration
 st.set_page_config(
     page_title="LDA Topic Modelling",
@@ -20,7 +21,7 @@ lda_results_file = 'data/lda_topics.csv'
 articles_significant_topics = 'data/articles_significant_topics.csv'
 lda_params_file = 'data/lda_params.csv'
 articles_file = 'data/cleaned_article.pkl'  
-dictionary_file = 'data/dictionary_after.pickle'
+dictionary_file = 'data/dictionary_after.pkl'
 html_path = 'data/lda.html'
 word_cloud_path = 'data/WordCloud_Topic.png'
 topic_evolution_image_path = 'data/Topic_Evolution.png'  
@@ -91,11 +92,10 @@ with tab1:
             st.write(article_details["Preprocessed Text"])
     
     # Display unique dictionary words
-    token2id_after = set(dictionary_after.token2id.keys())
     st.header("Unique Dictionary")
     st.write(f"Number of unique dictionary: {len(dictionary_after)}")
     with st.expander("Expand to see all unique dictionary"):
-            st.write(token2id_after)
+            st.write(dictionary_after)
 
 
 
