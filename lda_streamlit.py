@@ -142,7 +142,7 @@ with tab2:
     with open(html_path, 'r', encoding='utf-8') as html:
         lda_html = html.read()
         st.header("PyLDAvis")
-        components.html(lda_html, width=1200, height=900, scrolling=True)
+        components.html(lda_html, width=1300, height=900, scrolling=True)
 
     # Display Evolution of Topics Over Time
     st.header("Evolution of Topics Over Time")
