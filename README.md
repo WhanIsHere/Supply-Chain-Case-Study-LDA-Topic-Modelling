@@ -5,7 +5,7 @@ This research project utilizes the application of Latent Dirichlet Allocation (L
 This research shows that LDA is an effective tool for analyzing large volumes of textual data which offers different views of complex supply chain issues.
 
 This project started from
-1. Data collection to obtain 565 documents of case study from the SCOPUS, then using PyMUPDF to do text extraction and store in dataframe. [Click Here to Download Data.](https://drive.google.com/drive/folders/1Q4HAml-wn944uQifjWj3T8abyJgu5SFK?usp=sharing)
+1. Data collection to obtain 565 documents of case study from the SCOPUS, then using PyMUPDF to do text extraction and store in dataframe. 
 2. Data preprocessing using SPACY includes stopwords removal, lemmatization, POS tag with only ["noun", "adj", "verb", "adverb"].
 3. Topic Modeling with Gensim to get the Bags of Words(BoW) and fit in Gensim.LDA model.
 4. Fine tuning the parameters of model (number of topics, alpha, beta, chunksize, passes).
